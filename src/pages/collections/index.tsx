@@ -1,13 +1,7 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
-
-export default function Home() {
+export default function Collections() {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
+    <div>
+      <h1>hello coll</h1>
       Main menu WikipediaThe Free Encyclopedia Search Wikipedia Search Create
       account Log in Personal tools Photograph your local culture, help
       Wikipedia and win!Hide Contents hide (Top) Background Limitations Domain
@@ -233,6 +227,6 @@ export default function Home() {
       WikipediaDisclaimersContact WikipediaCode of
       ConductDevelopersStatisticsCookie statementMobile viewWikimedia
       FoundationPowered by MediaWiki Toggle limited content width
-    </main>
+    </div>
   );
 }
