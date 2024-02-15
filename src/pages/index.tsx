@@ -1,9 +1,11 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
+import { useRouter } from "next/router";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  const r = useRouter();
   return (
     <main
       className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
@@ -233,6 +235,7 @@ export default function Home() {
       WikipediaDisclaimersContact WikipediaCode of
       ConductDevelopersStatisticsCookie statementMobile viewWikimedia
       FoundationPowered by MediaWiki Toggle limited content width
+      <button onClick={() => r.push("/collections")}>GO COLL</button>
     </main>
   );
 }

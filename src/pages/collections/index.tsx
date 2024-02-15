@@ -1,4 +1,7 @@
+import { useRouter } from "next/router";
+
 export default function Collections() {
+  const r = useRouter();
   return (
     <div>
       <h1>hello coll</h1>
@@ -227,6 +230,7 @@ export default function Collections() {
       WikipediaDisclaimersContact WikipediaCode of
       ConductDevelopersStatisticsCookie statementMobile viewWikimedia
       FoundationPowered by MediaWiki Toggle limited content width
+      <button onClick={() => r.back()}>GO BACK </button>
     </div>
   );
 }
