@@ -3,6 +3,8 @@ const nextConfig = {
   reactStrictMode: true,
   experimental: {
     scrollRestoration: true,
+    appDir: false,
+    legacyBrowsers: false,
   },
 };
 
